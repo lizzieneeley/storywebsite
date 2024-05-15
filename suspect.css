@@ -102,10 +102,7 @@
 
 .desc{
   color: azure;
+  line-height: 45px;
 }
 
-.pads{
-  padding-left: 50px;
-  padding-right: 50px;
-  color: rgb(195, 195, 195);
-}
+

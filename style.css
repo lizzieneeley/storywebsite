@@ -14,6 +14,11 @@ body {
   margin-right: 30px;
 }
 
+.navWord::selection {
+  background-color: #A98952;
+  color: #000000;
+}
+
 .navbar-brand {
   color: white;
 }
@@ -133,9 +138,70 @@ h5 {
   color:#000000
 }
 
-.suspect {
-  max-width: 400px;
+.suspect::selection {
+  background-color: transparent;
 }
+
+.topText::selection {
+  background-color: #A98952; 
+  color: black; 
+}
+
+.bottomText::selection {
+  background-color: #A98952; 
+  color: black; 
+}
+
+br::selection {
+  background-color:transparent; 
+  color: transparent; 
+}
+
+.murder1::selection {
+  background-color: black;
+  color:#A98952;
+}
+
+.murder2::selection {
+  text-shadow: -1px -1px 0 rgb(140, 117, 71, 0.7),  
+                  1px -1px 0 rgb(140, 117, 71, 0.7),
+                 -1px  1px 0 rgb(140, 117, 71, 0.7),
+                  1px  1px 0 rgb(140, 117, 71, 0.7);
+  color:#000000
+}
+
+.murder3::selection {
+  text-shadow: -1px -1px 0 rgb(140, 117, 71, 0.5),  
+                  1px -1px 0 rgb(140, 117, 71, 0.5),
+                 -1px  1px 0 rgb(140, 117, 71, 0.5),
+                  1px  1px 0 rgb(140, 117, 71, 0.5);
+  color:#000000
+}
+
+.murder4::selection {
+  text-shadow: -1px -1px 0 rgb(140, 117, 71, 0.35),  
+                  1px -1px 0 rgb(140, 117, 71, 0.35),
+                 -1px  1px 0 rgb(140, 117, 71, 0.35),
+                  1px  1px 0 rgb(140, 117, 71, 0.35);
+  color:#000000
+}
+
+.murder5::selection {
+  text-shadow: -1px -1px 0 rgb(140, 117, 71, 0.2),  
+                  1px -1px 0 rgb(140, 117, 71, 0.2),
+                 -1px  1px 0 rgb(140, 117, 71, 0.2),
+                  1px  1px 0 rgb(140, 117, 71, 0.2);
+  color:#000000
+}
+
+.murder6::selection {
+  text-shadow: -1px -1px 0 rgb(140, 117, 71, 0.1),  
+                  1px -1px 0 rgb(140, 117, 71, 0.1),
+                 -1px  1px 0 rgb(140, 117, 71, 0.1),
+                  1px  1px 0 rgb(140, 117, 71, 0.1);
+  color:#000000
+}
+
 
 
 

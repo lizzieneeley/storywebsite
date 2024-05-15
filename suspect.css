@@ -99,3 +99,13 @@
 #special {
   color: #A30000;
 }
+
+.desc{
+  color: azure;
+}
+
+.pads{
+  padding-left: 50px;
+  padding-right: 50px;
+  color: rgb(195, 195, 195);
+}

@@ -105,4 +105,10 @@
   line-height: 45px;
 }
 
+.guess{
+  color: rgb(195, 195, 195);
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  font-size: 25px;
+}
 

@@ -20,10 +20,53 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css"></head>
-
-
-
-
-
+        <link rel="stylesheet" href="suspect.css">
+    </head>
+    <body class="color">
+        <nav class="navbar navbar-expand-lg navbar-dark  sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">THE FINAL ACT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav"> <!-- Added navbar-nav class here -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="spacing" href="/suspect.html">SUSPECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONCLUSION</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 class="bios">Conclusion</h1>
+        <hr class="bioLine">
+        <br>
+        <p class="guess">Based off the information given, decide who is responsible for Maria Del Luca's murder.</p>
+        <div class="button-container buttonSpace">
+        <button onclick="guess()" class="btn btn-outline-light btn-lg position-absolute bottom-0 start-50 translate-middle-x btn-square">Take a Guess</button>
+        </div>
+        <script>
+        function guess(){
+	        var secretPassword = "Pa$sword123";
+	        var password = readLine("Password: ");
+	        if(password == secretPassword){
+		        println("Your password is correct!");
+	        }else{
+		        println("You have entered the password incorrectly! Try again!");
+	        }var password = readLine("Password: ");
+	        if(password == secretPassword){
+		        println("Your second attempt is correct!");
+	            }else{
+	             println("Two incorrect attempts! You are locked out of your account.");
+	        }
+        }
+    </script>
+    </body>
+    
 </html>

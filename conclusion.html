@@ -48,22 +48,26 @@
         <hr class="bioLine">
         <br>
         <p class="guess">Based off the information given, decide who is responsible for Maria Del Luca's murder.</p>
+        <br>
+        <p class="guess">Options: <br><ol></ol></p>
+        <br>
         <div class="button-container buttonSpace">
-        <button onclick="guess()" class="btn btn-outline-light btn-lg position-absolute bottom-0 start-50 translate-middle-x btn-square">Take a Guess</button>
+        <button onclick="guess()" class="btn btn-outline-light btn-lg position-absolute start-50 translate-middle-x btn-square">Take a Guess</button>
         </div>
         <script>
-        function guess(){
+        function guess(password){
+
 	        var secretPassword = "Pa$sword123";
 	        var password = readLine("Password: ");
 	        if(password == secretPassword){
-		        println("Your password is correct!");
+		        println("Your answer is correct!");
 	        }else{
 		        println("You have entered the password incorrectly! Try again!");
 	        }var password = readLine("Password: ");
 	        if(password == secretPassword){
 		        println("Your second attempt is correct!");
 	            }else{
-	             println("Two incorrect attempts! You are locked out of your account.");
+	             println("Wrong sorry...");
 	        }
         }
     </script>

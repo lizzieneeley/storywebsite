@@ -55,21 +55,20 @@
         <button onclick="guess()" class="btn btn-outline-light btn-lg position-absolute start-50 translate-middle-x btn-square">Take a Guess</button>
         </div>
         <script>
-        function guess(password){
+        function guess() {
+    var secretPassword = "Vincent Santorini";
+    var password;
 
-	        var secretPassword = "Pa$sword123";
-	        var password = readLine("Password: ");
-	        if(password == secretPassword){
-		        println("Your answer is correct!");
-	        }else{
-		        println("You have entered the password incorrectly! Try again!");
-	        }var password = readLine("Password: ");
-	        if(password == secretPassword){
-		        println("Your second attempt is correct!");
-	            }else{
-	             println("Wrong sorry...");
-	        }
+    do {
+        password = prompt("Password: ");
+        if (password === secretPassword) {
+            alert("Your password is correct!");
+        } else {
+            alert("You have entered the password incorrectly! Try again!");
         }
+    } while (password !== secretPassword);
+}
+
     </script>
     </body>
     

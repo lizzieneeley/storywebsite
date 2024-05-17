@@ -57,7 +57,7 @@ body {
 
 
 h5 {
-  font-size: 85px;
+  font-size: 120px;
   letter-spacing: 20px;
   line-height: 90%;
 }
@@ -68,7 +68,6 @@ h5 {
 
 .topText {
   font-size: 20px;
-  margin-bottom: 10px;
   letter-spacing: 5px;
   line-height: 10%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);

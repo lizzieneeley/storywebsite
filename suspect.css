@@ -112,3 +112,9 @@
   font-size: 25px;
 }
 
+.guessList{
+  color: rgb(195, 195, 195);
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  font-size: 20px;
+}

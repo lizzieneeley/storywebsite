@@ -40,6 +40,10 @@
   .navbar a:hover::after {
     width: 100%;
   }
+
+  #crime {
+    margin-right: 80px;
+  }
   
   .navbar a {
     float: left;

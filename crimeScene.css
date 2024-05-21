@@ -26,6 +26,10 @@
     margin-left: 50px;
     margin-right: 80px;
   }
+
+  #crime {
+    margin-right: 80px;
+  }
   
 .navbar a::after {
   content: "";
@@ -61,6 +65,14 @@
   margin-top: 40px;
   text-align: center;
   font-size: 55px;
+}
+
+body {
+  background-image: url(/img/fr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
 }
 
 .jeanPaul {

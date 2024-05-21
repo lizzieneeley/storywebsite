@@ -26,6 +26,10 @@
     margin-left: 50px;
     margin-right: 80px;
   }
+
+#crime {
+  margin-right: 80px;
+}
   
 .navbar a::after {
   content: "";
@@ -37,6 +41,8 @@
     left: 0;
     transition: width 0.35s ease;
 }
+
+
   
 .navbar a:hover::after {
     width: 100%;

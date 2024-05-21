@@ -67,13 +67,46 @@
   font-size: 55px;
 }
 
-body {
-  background-image: url(/img/fr.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-
+.scene {
+  min-width: 1800px;
+  margin-left: 50px;
+  position: relative;
 }
+
+.powder {
+  position: absolute;
+  bottom: -325px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.outline {
+  position: absolute;
+  top: calc(50% + 450px);
+  left: 110px; 
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.9;
+}
+.folder {
+  position: absolute; 
+  bottom: -325px; 
+  right: 60px;  
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+.guess{
+  color: rgb(195, 195, 195);
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  font-size: 25px;
+}
+
 
 .jeanPaul {
   max-width: 20px;

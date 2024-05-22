@@ -67,13 +67,13 @@
   font-size: 55px;
 }
 
-.scene {
+#scene {
   min-width: 1800px;
   margin-left: 50px;
   position: relative;
 }
 
-.powder {
+#powder {
   position: absolute;
   bottom: -325px;
   left: 50%; 
@@ -82,7 +82,7 @@
   opacity: 0.9;
 }
 
-.outline {
+#outline {
   position: absolute;
   top: calc(50% + 450px);
   left: 110px; 
@@ -90,7 +90,7 @@
   z-index: 2;
   opacity: 0.9;
 }
-.folder {
+#folder {
   position: absolute; 
   bottom: -325px; 
   right: 60px;  
@@ -98,6 +98,25 @@
   height: 200px;
   z-index: 2;
   opacity: 0.9;
+}
+
+#powder:hover {
+  width: 500px;
+  cursor: grab;
+}
+
+#folder:hover {
+  width:300px;
+  cursor: grab;
+}
+
+#outline:hover {
+  width: 400px;
+  cursor: grab;
+}
+
+.imgHover:hover {
+  max-width: ;
 }
 
 .guess{

@@ -52,10 +52,87 @@
         <hr class="bioLine">
         <h2 class="guess">Below is the crime scene where Maria De Luca was murdered. Move your cursor along the image, and you might find a clue!</h2>
         <div class="scene-container">
-            <img class="imgHover" id="scene" src="/img/in a really nic 7ccc5e67-cdfc-4609-b302-6de17242b5f2 (1).png">
+            <img id="scene" src="/img/in a really nic 7ccc5e67-cdfc-4609-b302-6de17242b5f2 (1).png">
+            <img class="imgHover" id="weapon" src="/img/weaponTransparent (1).png">
             <img class="imgHover" id="powder" src="/img/gunpowder.png">
             <img class="imgHover" id="outline" src="/img/bodyoutline.png">
             <img class="imgHover" id="folder" src="/img/manillaFolder.png">
+            <div class="card" id="weapon-card">
+                <div class="card-body">
+                    <p class="card-text">Isabella's fingerprints are found on the murder weapon, 
+                        <br>indicating that she handled the gun before or after the crime. Furthermore, 
+                        <br>surveillance footage shows Isabella entering Maria's mansion shortly before 
+                        <br>the time of the murder, providing evidence of her presence at the scene.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="powder-card">
+                <div class="card-body">
+                    <p class="card-text">Forensic analysis reveals traces of gunpowder residue <br>on Vincent's clothing, 
+                        suggesting that he recently fired a weapon.<br> Additionally, witnesses report hearing heated arguments
+                         between<br> Vincent and Maria in the days leading up to her murder, <br>raising suspicions about their volatile relationship.</p>
+                </div>
+            </div>
+            <div class="card" id="outline-card">
+                <div class="card-body">
+                    <p class="card-text">Marco's DNA is discovered under Maria's fingernails, 
+                        <br>suggesting that she fought back against her attacker. Additionally, 
+                        witnesses <br>report seeing Marco lurking near Maria's mansion on the <br>night of the murder, 
+                        raising questions about his whereabouts and motives.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="folder-card">
+                <div class="card-body">
+                    <p class="card-text">Sophia's personal diary is discovered at the crime scene, 
+                        containing <br>cryptic entries alluding to feelings of jealousy and resentment
+                         towards Maria. <br>Additionally, witnesses report seeing Sophia arguing 
+                        with Maria in public <br>on several occasions, suggesting a potential motive for the murder. 
+                        Phone records <br>show a series of cryptic messages exchanged between Antonio and Maria in the hours 
+                        <br>leading up to her murder, hinting at a possible motive related to their secretive <br>correspondence. 
+                        Additionally, witnesses report seeing Antonio leaving Maria's mansion<br> shortly before the time of the murder, 
+                        raising questions about his involvement in the crime.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+    $(".imgHover").click(function() {
+        let cardId;
+        switch(this.id) {
+            case 'scene':
+                cardId = '#weapon-card';
+                break;
+            case 'powder':
+                cardId = '#powder-card';
+                break;
+            case 'outline':
+                cardId = '#outline-card';
+                break;
+            case 'folder':
+                cardId = '#folder-card';
+                break;
+            case 'weapon':
+                cardId = '#weapon-card';
+                break;
+        }
+        if ($(cardId).is(':visible')) {
+            $(cardId).fadeOut();
+        } else {
+            let offset = $(this).offset();
+            $(cardId).css({
+                top: offset.top + $(this).height() + 20,
+                left: offset.left + $(this).width() / 2 - $(cardId).width() / 2
+            }).fadeIn();
+        }
+    });
+    $(document).click(function(event) { 
+        if (!$(event.target).closest('.imgHover, .card').length) {
+            $(".card").fadeOut();
+        }        
+    });
+});
+        </script>
         </div>
     </body>
     
